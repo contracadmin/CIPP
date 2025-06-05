@@ -429,7 +429,7 @@ const Page = () => {
           <>
             {[1, 2, 3].map((item) => (
               <Grid container spacing={3} key={item} sx={{ mb: 4 }}>
-                <Grid item size={12}>
+                <Grid size={12}>
                   <Stack
                     direction="row"
                     justifyContent="space-between"
@@ -444,7 +444,7 @@ const Page = () => {
                   </Stack>
                 </Grid>
 
-                <Grid item size={{ xs: 12, md: 6 }}>
+                <Grid size={{ xs: 12, md: 6 }}>
                   <Card sx={{ height: "100%" }}>
                     <Stack
                       direction="row"
@@ -473,7 +473,7 @@ const Page = () => {
                   </Card>
                 </Grid>
 
-                <Grid item size={{ xs: 12, md: 6 }}>
+                <Grid size={{ xs: 12, md: 6 }}>
                   <Card sx={{ height: "100%" }}>
                     <Stack
                       direction="row"
@@ -640,7 +640,7 @@ const Page = () => {
 
             {filteredGroupedStandards[category].map((standard, index) => (
               <Grid container spacing={3} key={index} sx={{ mb: 4 }}>
-                <Grid item size={{ xs: 12, md: 6 }}>
+                <Grid size={{ xs: 12, md: 6 }}>
                   <Card sx={{ height: "100%", borderRadius: 2, boxShadow: 2 }}>
                     <Stack
                       direction="row"
@@ -783,7 +783,7 @@ const Page = () => {
                   </Card>
                 </Grid>
 
-                <Grid item size={{ xs: 12, md: 6 }}>
+                <Grid size={{ xs: 12, md: 6 }}>
                   <Card sx={{ height: "100%", borderRadius: 2, boxShadow: 2 }}>
                     <Stack
                       direction="row"
@@ -958,7 +958,7 @@ const Page = () => {
                 </Grid>
 
                 {standard.complianceDetails && (
-                  <Grid item size={12}>
+                  <Grid size={12}>
                     <Card sx={{ borderRadius: 2, boxShadow: 1 }}>
                       <Stack direction="row" alignItems="flex-start" spacing={2} sx={{ p: 3 }}>
                         <Box
