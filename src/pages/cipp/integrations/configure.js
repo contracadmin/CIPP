@@ -181,13 +181,12 @@ const Page = () => {
               {extension?.links && (
                 <>
                   {extension.links.map((link, index) => (
-                    <Box>
+                    <Box key={index}> 
                       <Button
                         href={link.url}
                         target="_blank"
                         rel="noreferrer"
                         color="inherit"
-                        key={index}
                       >
                         <SvgIcon fontSize="small" style={{ marginRight: "8" }}>
                           <ArrowTopRightOnSquareIcon />

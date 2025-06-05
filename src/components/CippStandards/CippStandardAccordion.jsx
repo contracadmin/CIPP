@@ -226,7 +226,6 @@ const CippStandardAccordion = ({
     setSavedValues(initial);
     setConfiguredState(initialConfigured);
     // Only depend on watchedValues and selectedStandards to avoid infinite loops
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchedValues, selectedStandards]);
 
   // Save changes for a standard
